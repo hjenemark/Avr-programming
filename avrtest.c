@@ -1,17 +1,10 @@
 /*
- * ----------------------------------------------------------------------------
- * "THE BEER-WARE LICENSE" (Revision 42):
- * <joerg@FreeBSD.ORG> wrote this file.  As long as you retain this notice you
- * can do whatever you want with this stuff. If we meet some day, and you think
- * this stuff is worth it, you can buy me a beer in return.        Joerg Wunsch
- * ----------------------------------------------------------------------------
- *
- * Simple AVR demonstration.  Controls a LED that can be directly
- * connected from OC1/OC1A to GND.  The brightness of the LED is
- * controlled with the PWM.  After each period of the PWM, the PWM
- * value is either incremented or decremented, that's all.
- *
- * $Id: demo.c 1637 2008-03-17 21:49:41Z joerg_wunsch $
+ This file is adopted from 
+ http://www.nongnu.org/avr-libc/user-manual/group__demo__project.html
+ This version is specifically aimed at the Atmega328p as it is on the Arduino
+ hardware platform. The mentioned LED is connected to the PIN 9 in the Arduino PCB.
+ 
+ The result is a up/down fading LED.
  */
 
 #include <avr/io.h>
